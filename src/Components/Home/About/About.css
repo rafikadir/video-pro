@@ -1,0 +1,39 @@
+.pt-100 {
+    padding-top: 100px;
+}
+.pb-70 {
+    padding-bottom: 70px;
+}
+.about-text h6 {
+    color: #007cfb;
+}
+.about-text h1 {
+    color: #15287d;
+    font-size: 50px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.about-text p {
+    color: #747ca2;
+    margin-bottom: 25px;
+}
+.about-text a {
+    background-color: #007cfb;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 20px;
+    transition:.5s;
+    margin-bottom: 30px;
+}
+.about-text a:hover {
+    background-color: #0f5caa;
+    color: #fff;
+    text-decoration: none;
+}
+.about-image img {
+    max-width: 100%;
+}
+.about-image {
+    margin-bottom: 30px;
+}
