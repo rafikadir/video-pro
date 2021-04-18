@@ -1,0 +1,17 @@
+.review-section {
+    background-color: #edf6ff;
+}
+.reviews-heading {
+    padding-bottom: 20px;
+}
+
+.reviews-heading h6 {
+    color: #007cfb;
+}
+.reviews-heading h1 {
+    color: #15287d;
+    font-size: 50px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

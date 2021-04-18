@@ -1,0 +1,14 @@
+.service-heading {
+    padding-bottom: 20px;
+}
+
+.service-heading h6 {
+    color: #007cfb;
+}
+.service-heading h1 {
+    color: #15287d;
+    font-size: 50px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

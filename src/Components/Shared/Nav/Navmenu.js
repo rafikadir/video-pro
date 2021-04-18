@@ -3,7 +3,6 @@ import logo from '../../../Images/logo.png';
 import './Navmenu.css';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 
-
 const Navmenu = () => {
     return (
         <div className="main-navbar">
@@ -15,11 +14,12 @@ const Navmenu = () => {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ml-auto">
-                            <Nav.Link className="nav-link" href="#">Home</Nav.Link>
+                            <Nav.Link className="nav-link" href="/">Home</Nav.Link>
                             <Nav.Link className="nav-link" href="#">About</Nav.Link>
                             <Nav.Link className="nav-link" href="#">Services</Nav.Link>
-                            <Nav.Link className="nav-link" href="#">Reviews</Nav.Link>
-                            <Nav.Link className="nav-link" href="#">Contact</Nav.Link>
+                            <Nav.Link className="nav-link" href="/dashboard">Order</Nav.Link>
+                            <Nav.Link className="nav-link" href="/dashboard">Admin</Nav.Link>
+                            <Nav.Link className="nav-link login" href="/login">Log In</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>    

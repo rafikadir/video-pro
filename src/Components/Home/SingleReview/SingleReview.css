@@ -1,0 +1,25 @@
+.reviews-box {
+    margin-bottom: 30px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    border-bottom: 3px solid #dde5ee;
+    transition:.5s;
+}
+.reviews-box:hover {
+    margin-top: -10px;
+}
+
+.reviews-box img{
+    max-width: 100px;
+    border-radius: 100px;
+    margin-bottom: 20px;
+}
+.reviews-box h3 {
+    font-size:22px;
+    color: #15287d;
+    margin-bottom: 15px;
+}
+.reviews-box p {
+    color:#747ca2;
+}

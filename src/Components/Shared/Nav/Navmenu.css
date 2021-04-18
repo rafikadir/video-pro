@@ -2,7 +2,7 @@
     padding: 0px !important;
 }
 .main-navbar {
-    padding: 10px 0;
+    padding: 0px 0;
 }
 .logo {
     max-width: 150px;
@@ -12,10 +12,18 @@
     font-weight: 600;
     color: #15287d !important;
     line-height: 1;
-    padding: 0 5px !important;
+    padding: 10px 5px !important;
     margin: 0 10px !important ;
     transition: .5s;
 }
 .nav-link:hover {
     color: #007cfb !important;
+}
+.login {
+    background: red;
+    color: #fff !important;
+    padding: 10px 10px !important;
+}
+.login:hover {
+    color: #fff !important;
 }
