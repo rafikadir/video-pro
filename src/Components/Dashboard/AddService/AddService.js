@@ -38,7 +38,7 @@ const AddService = () => {
             image: imageURL
         }
 
-        const url = `http://localhost:4000/addService`;
+        const url = `https://desolate-crag-48774.herokuapp.com/addService`;
         fetch(url,{
             method: 'POST',
             headers: {

@@ -35,7 +35,7 @@ const ClientReview = () => {
             image: imageURL
         }
 
-        const url = `http://localhost:4000/addReview`;
+        const url = `https://desolate-crag-48774.herokuapp.com/addReview`;
         fetch(url,{
             method: 'POST',
             headers: {

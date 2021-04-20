@@ -11,7 +11,7 @@ const OrderList = () => {
     useEffect(()=>{
 
 
-        fetch('http://localhost:4000/orders')
+        fetch('https://desolate-crag-48774.herokuapp.com/orders')
         .then(res=>res.json())
         .then(data =>{
             setOrders(data);

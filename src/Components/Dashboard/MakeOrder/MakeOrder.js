@@ -17,7 +17,7 @@ const MakeOrder = () => {
     const [service, setService] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:4000/services/')
+        fetch('https://desolate-crag-48774.herokuapp.com/services/')
         .then(res => res.json())
         .then(data => {
             const serviceList = data;
@@ -36,7 +36,7 @@ const MakeOrder = () => {
         }
         console.log(orderInfo);
 
-        const url = `http://localhost:4000/addOrder`;
+        const url = `https://desolate-crag-48774.herokuapp.com/addOrder`;
         fetch(url,{
             method: 'POST',
             headers: {
