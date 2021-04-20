@@ -1,28 +1,21 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Container, Row } from 'react-bootstrap';
 import SingleReview from '../SingleReview/SingleReview';
 import client from '../../../Images/client.jpg';
 import './Review.css';
 
-const reviews = [
-    {
-        name: "Rafi Kadir",
-        image: client,
-        reviews: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem facilis debitis ea!"
-    },
-    {
-        name: "Rafi Chy",
-        image: client,
-        reviews: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem facilis debitis ea!"
-    },
-    {
-        name: "Rafi Jami",
-        image: client,
-        reviews: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem facilis debitis ea!"
-    }
-]
-
 const Reviews = () => {
+
+    const [reviews, setReviews] = useState([])
+
+    useEffect(()=>{
+        fetch('http://localhost:4000/reviews/')
+        .then(res=>res.json())
+        .then(data =>{
+            setReviews(data);
+        })
+    },[])
+
     return (
         <section className="review-section pt-100 pb-70">
             <Container>

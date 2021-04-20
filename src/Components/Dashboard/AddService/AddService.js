@@ -6,8 +6,10 @@ import { userContext } from '../../../App';
 import axios from 'axios';
 import Navmenu from '../../Shared/Nav/Navmenu';
 import Sidebar from '../Sidebar/Sidebar';
+import './AddService.css';
 
-const ClientReview = () => {
+
+const AddService = () => {
 
     const [loggedInUser, setLoggedInUser] = useContext(userContext);
     const { register, handleSubmit, watch, errors } = useForm();
@@ -29,46 +31,50 @@ const ClientReview = () => {
     };
 
     const onSubmit = data => {
-        const reviews = {
+        const serviceData = {
             name: data.name,
-            reviews: data.review,
+            price: data.price,
+            description: data.description,
             image: imageURL
         }
 
-        const url = `http://localhost:4000/addReview`;
+        const url = `http://localhost:4000/addService`;
         fetch(url,{
             method: 'POST',
             headers: {
                 'content-type' : 'application/json'
             },
-            body: JSON.stringify(reviews)
+            body: JSON.stringify(serviceData)
         })
         .then(response =>{
             console.log("Server Response", response)
         })
 
-        alert("Review Added!");
+        alert("Service Added!");
     };
 
     return (
         <div>
-             <Navmenu></Navmenu>
-            <Container className="order-area">
+            <Navmenu></Navmenu>
+            <Container className="order-area pt-100">
                 <Row>
                     <Col lg={3}>
                         <Sidebar></Sidebar>
                     </Col>
-                    <Col lg={9}>
-                    <form className="service-form" onSubmit={handleSubmit(onSubmit)}>
-                            <label>Name:</label><br/>
-                            <input name="name" {...register('name')} />
+                    <Col lg={4}>
+                        <form className="service-form" onSubmit={handleSubmit(onSubmit)}>
+                            <label>Service Name:</label><br/>
+                            <input name="service" {...register('name')} />
                             <br/>
-                            <label>Review:</label><br/>
-                            <input name="review" type="text" {...register('review')} />     
+                            <label>Service Price:</label><br/>
+                            <input name="price" type="number" {...register('price')} />     
+                            <br/>
+                            <label>Service Description:</label><br/>
+                            <input name="description" {...register('description')} />
                             <br/>
                             <label>Upload Image:</label><br/>           
                             <input onChange={handleImage} type="file"/><br/>                    
-                            <input value="Add Review" className="submit" type="submit"/>
+                            <input value="Add Service" className="submit" type="submit"/>
                         </form>
                     </Col>
                 </Row>
@@ -77,4 +83,4 @@ const ClientReview = () => {
     );
 };
 
-export default ClientReview;
+export default AddService;

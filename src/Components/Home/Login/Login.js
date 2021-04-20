@@ -26,18 +26,23 @@ const Login = () => {
     const googleSignIn = () => {
         firebase.auth().signInWithPopup(provider)
         .then (res=>{
-            // const usermail = res.user.email;
-            // setUser(usermail);
-            // setLoggedInUser(res.user);
             const {displayName,email,photoURL} = res.user;
             const userInfo = {username: displayName, email:email, photoURL: photoURL};
             setLoggedInUser(userInfo);
             history.replace(from);
             console.log(userInfo);
+            setToken();
         })
         .catch(error =>{
             alert(error.message,"TRY AGAIN!");
         })
+    }
+
+    
+    const setToken = () => {
+        firebase.auth().currentUser.getIdToken(true).then(function(idToken) {
+            sessionStorage.setItem('token', idToken);
+          }).catch(function(error){});
     }
 
     const history = useHistory();

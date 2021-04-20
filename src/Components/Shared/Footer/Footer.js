@@ -23,10 +23,10 @@ const Footer = () => {
                             <div className="footer-link">
                                 <h3>Our Link</h3>
                                 <ul>
-                                    <li><a href="#">About</a></li>
-                                    <li><a href="#">Service</a></li>
-                                    <li><a href="#">Pricing</a></li>
-                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="/">About</a></li>
+                                    <li><a href="/">Service</a></li>
+                                    <li><a href="/">Pricing</a></li>
+                                    <li><a href="/">Contact</a></li>
                                 </ul>
                             </div>
                         </Col>
@@ -34,10 +34,10 @@ const Footer = () => {
                         <div className="footer-link">
                             <h3>Others links</h3>
                                 <ul>
-                                    <li><a href="#">T&C</a></li>
-                                    <li><a href="#">Pricing</a></li>
-                                    <li><a href="#">Services</a></li>
-                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="/">T&C</a></li>
+                                    <li><a href="/">Pricing</a></li>
+                                    <li><a href="/">Services</a></li>
+                                    <li><a href="/">Contact</a></li>
                                 </ul>
                             </div>
                         </Col>

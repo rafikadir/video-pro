@@ -37,3 +37,9 @@
 .about-image {
     margin-bottom: 30px;
 }
+
+@media (max-width: 576px) { 
+    .about-text h1 {
+        font-size: 24px;
+    }
+}

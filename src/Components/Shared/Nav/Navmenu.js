@@ -17,8 +17,7 @@ const Navmenu = () => {
                             <Nav.Link className="nav-link" href="/">Home</Nav.Link>
                             <Nav.Link className="nav-link" href="#">About</Nav.Link>
                             <Nav.Link className="nav-link" href="#">Services</Nav.Link>
-                            <Nav.Link className="nav-link" href="/dashboard">Order</Nav.Link>
-                            <Nav.Link className="nav-link" href="/dashboard">Admin</Nav.Link>
+                            <Nav.Link className="nav-link" href="/dashboard">Dashboard</Nav.Link>
                             <Nav.Link className="nav-link login" href="/login">Log In</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>

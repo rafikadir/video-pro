@@ -12,3 +12,9 @@
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
+@media (max-width: 576px) { 
+    .service-heading h1 {
+        font-size:24px;
+    }
+}

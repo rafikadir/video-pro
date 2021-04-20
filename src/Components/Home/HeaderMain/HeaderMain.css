@@ -48,3 +48,23 @@
     color: #fff;
     text-decoration: none;
 }
+
+@media (max-width: 576px) { 
+    .banner-area {
+        height: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        text-align: center;
+    }
+    .banner-text h1 {
+        color: #fff;
+        font-size:30px;
+        font-weight:700;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .banner-img img {
+        margin-top: 10px;
+    }
+}
